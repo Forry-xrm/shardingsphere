@@ -16337,6 +16337,22 @@
             <column-projection name="order_id" alias="COMMENT" start-index="7" stop-index="22" />
         </projections>
     </select>
+    <select sql-case-id="select_matching_identifier_firebird">
+        <projections start-index="7" stop-index="14">
+            <column-projection name="matching" start-index="7" stop-index="14" />
+        </projections>
+        <from>
+            <simple-table name="t_order" start-index="21" stop-index="27" />
+        </from>
+    </select>
+    <select sql-case-id="select_matching_alias_with_as_firebird">
+        <from>
+            <simple-table name="t_order" start-index="33" stop-index="39" />
+        </from>
+        <projections start-index="7" stop-index="26">
+            <column-projection name="order_id" alias="matching" start-index="7" stop-index="26" />
+        </projections>
+    </select>
     <select sql-case-id="select_operator_prefix_aliases_pg">
         <from>
             <simple-table name="foo_table" start-index="56" stop-index="64" />

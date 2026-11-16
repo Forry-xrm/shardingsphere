@@ -652,6 +652,8 @@
     <sql-case id="select_key_alias_without_as_firebird" value="SELECT order_id KEY FROM t_order" db-types="Firebird" />
     <sql-case id="select_text_alias_without_as_firebird" value="SELECT order_id TEXT FROM t_order" db-types="Firebird" />
     <sql-case id="select_comment_alias_without_as_firebird" value="SELECT order_id COMMENT FROM t_order" db-types="Firebird" />
+    <sql-case id="select_matching_identifier_firebird" value="SELECT matching FROM t_order" db-types="Firebird" />
+    <sql-case id="select_matching_alias_with_as_firebird" value="SELECT order_id AS matching FROM t_order" db-types="Firebird" />
     <sql-case id="select_operator_prefix_aliases_pg" value="SELECT ~~a, !~~a, ~~*a, !~~*a, &amp;&amp;a, ~*a, !~a, !~*a FROM foo_table" db-types="PostgreSQL" case-types="Literal" />
     <sql-case id="select_fixed_generic_operator_symbols_pg" value="SELECT a == b, a &lt;=&gt; b FROM foo_table" db-types="PostgreSQL" case-types="Literal" />
     <sql-case id="select_operator_backtick_pg" value="SELECT a ` b, `a FROM foo_table" db-types="PostgreSQL" case-types="Literal" />
