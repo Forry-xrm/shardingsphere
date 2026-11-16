@@ -871,6 +871,10 @@ MATCHED
     : M A T C H E D
     ;
 
+MATCHING
+    : M A T C H I N G
+    ;
+
 PASSWORD
     : P A S S W O R D
     ;

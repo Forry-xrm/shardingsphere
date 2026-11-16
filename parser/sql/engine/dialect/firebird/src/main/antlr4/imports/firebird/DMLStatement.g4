@@ -21,10 +21,15 @@ import BaseRule;
 
 insert
     : INSERT INTO? tableName (insertValuesClause | insertSelectClause) returningClause?
+    | UPDATE OR INSERT INTO tableName insertValuesClause matchingClause? returningClause?
     ;
 
 insertValuesClause
     : columnNames? (VALUES | VALUE) assignmentValues (COMMA_ assignmentValues)*
+    ;
+
+matchingClause
+    : MATCHING columnNames
     ;
 
 insertSelectClause

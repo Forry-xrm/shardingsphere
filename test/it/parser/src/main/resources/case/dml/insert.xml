@@ -4747,6 +4747,86 @@
             </value>
         </values>
     </insert>
+    <insert sql-case-id="insert_update_or_insert_with_parameters" parameters="1, 'one'">
+        <table name="T_PLAIN" start-index="22" stop-index="28" />
+        <columns start-index="30" stop-index="39">
+            <column name="ID" start-index="31" stop-index="32" />
+            <column name="NAME" start-index="35" stop-index="38" />
+        </columns>
+        <values>
+            <value>
+                <assignment-value>
+                <parameter-marker-expression parameter-index="0" start-index="49" stop-index="49" />
+                <literal-expression value="1" start-index="49" stop-index="49" />
+                </assignment-value>
+                <assignment-value>
+                <parameter-marker-expression parameter-index="1" start-index="52" stop-index="52" />
+                <literal-expression value="one" start-index="52" stop-index="56" />
+                </assignment-value>
+            </value>
+        </values>
+    </insert>
+    <insert sql-case-id="insert_update_or_insert_with_literals">
+        <table name="T_PLAIN" start-index="22" stop-index="28" />
+        <columns start-index="30" stop-index="39">
+            <column name="ID" start-index="31" stop-index="32" />
+            <column name="NAME" start-index="35" stop-index="38" />
+        </columns>
+        <values>
+            <value>
+                <assignment-value>
+                <literal-expression value="1" start-index="49" stop-index="49" />
+                </assignment-value>
+                <assignment-value>
+                <literal-expression value="one" start-index="52" stop-index="56" />
+                </assignment-value>
+            </value>
+        </values>
+    </insert>
+    <insert sql-case-id="insert_update_or_insert_with_matching" parameters="1, 'one'">
+        <table name="T_PLAIN" start-index="22" stop-index="28" />
+        <columns start-index="30" stop-index="39">
+            <column name="ID" start-index="31" stop-index="32" />
+            <column name="NAME" start-index="35" stop-index="38" />
+        </columns>
+        <values>
+            <value>
+                <assignment-value>
+                <parameter-marker-expression parameter-index="0" start-index="49" stop-index="49" />
+                <literal-expression value="1" start-index="49" stop-index="49" />
+                </assignment-value>
+                <assignment-value>
+                <parameter-marker-expression parameter-index="1" start-index="52" stop-index="52" />
+                <literal-expression value="one" start-index="52" stop-index="56" />
+                </assignment-value>
+            </value>
+        </values>
+    </insert>
+    <insert sql-case-id="insert_update_or_insert_with_returning" parameters="1, 1">
+        <table name="T_PLAIN" start-index="22" stop-index="28" />
+        <columns start-index="30" stop-index="39">
+            <column name="ID" start-index="31" stop-index="32" />
+            <column name="NAME" start-index="35" stop-index="38" />
+        </columns>
+        <values>
+            <value>
+                <assignment-value>
+                <parameter-marker-expression parameter-index="0" start-index="49" stop-index="49" />
+                <literal-expression value="1" start-index="49" stop-index="49" />
+                </assignment-value>
+                <assignment-value>
+                <parameter-marker-expression parameter-index="1" start-index="52" stop-index="52" />
+                <literal-expression value="1" start-index="52" stop-index="52" />
+                </assignment-value>
+            </value>
+        </values>
+        <returning start-index="55" stop-index="72">
+            <projections start-index="65" stop-index="72">
+                <column-projection name="ID" start-index="65" stop-index="66" />
+                <column-projection name="NAME" start-index="69" stop-index="72" />
+            </projections>
+        </returning>
+    </insert>
 
     <insert sql-case-id="insert_with_geom_collection_function">
         <table name="t1" start-index="12" stop-index="13" />
