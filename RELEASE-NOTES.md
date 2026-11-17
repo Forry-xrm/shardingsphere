@@ -204,6 +204,7 @@
 1. SQL Parser: Simplify SQL statement visitors in Firebird - [#40315](https://github.com/apache/shardingsphere/pull/40315)
 1. Proxy: Simplify command executors and authentication engine in Firebird - [#40318](https://github.com/apache/shardingsphere/pull/40318)
 1. SQL Parser: Support parsing and binding SYSTEM_USER expressions in SQL92 - [#39102](https://github.com/apache/shardingsphere/pull/39102)
+1. SQL Parser: Support Firebird `UPDATE OR INSERT` statement parsing and keep `MATCHING` usable as an identifier - [#40479](https://github.com/apache/shardingsphere/issues/40479)
 
 ## Release 5.5.3
 
